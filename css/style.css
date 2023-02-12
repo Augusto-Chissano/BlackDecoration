@@ -102,3 +102,50 @@
 .btn:hover {
     opacity: 1;
 }
+
+/*Confiurations for benefits section*/
+#benefits h2 {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2.5rem;
+    font-weight: 800;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-secondary);
+}
+
+.benefit .benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    background-position: center;
+    background-size: cover;
+}
+
+#benefit-1 {
+    background-image: url(../img/img3.jpg);
+}
+
+#benefit-2 {
+    background-image: url(../img/img4.jpg);
+}
+
+#benefit-3 {
+    background-image: url(../img/img5.jpg);
+}
