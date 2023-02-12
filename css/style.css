@@ -1,0 +1,104 @@
+:root {
+    --primary: rgb(255, 51, 0);
+    --secondary: rgb(87, 86, 86);
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurations for first section (Event Description)*/
+#event-description {
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color)
+}
+
+#context h1,
+#context .event-date {
+    color: var(--primary);
+}
+
+#context h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#context .about-event {
+    font-size: 2rem;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#context p {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+#context .event-date {
+    font-weight: bold;
+}
+
+#subscription-form {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 24%;
+}
+
+#subscription-form p {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.7rem;
+}
+
+.form-group label {
+    color: var(--text-tertiary);
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: .4s;
+    font-size: bold;
+}
+
+.btn:hover {
+    opacity: 1;
+}
