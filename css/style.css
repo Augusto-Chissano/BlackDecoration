@@ -153,7 +153,7 @@
 /* Configurations for event location section*/
 #location {
     height: 450px;
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/img12.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/img12.jpg);
     background-size: cover;
     background-position: center;
     color: var(--text-color);
@@ -163,7 +163,8 @@
     margin-bottom: 3rem;
 }
 
-#address , #about-location {
+#address,
+#about-location {
     max-width: 30%;
 }
 
@@ -233,7 +234,7 @@
 
 #call-to-action {
     height: 300px;
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/img7.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/img6.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -249,9 +250,181 @@
     font-weight: 600;
 }
 
-#call-to-action .btn {
+#call-to-action a {
+    text-align: center;
+    text-decoration: none;
     width: 30%;
     margin: 0 auto;
     font-weight: 700;
     font-size: 1.6rem;
+}
+
+/* Footer*/
+
+footer {
+    text-align: center;
+    color: var(--text-secondary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+footer p:nth-child(2) {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+/*Configurations for mobile*/
+@media (max-width:450px) {
+
+    /*Event description*/
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #context {
+        padding: 0.8rem;
+    }
+
+    #context h1 {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+    }
+
+    #context .about-event {
+        font-size: 1.6rem;
+    }
+
+    #subscription-form {
+        max-width: 85%;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    /*benefits section*/
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding: 2rem;
+    }
+
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    /*Event location*/
+    #location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    #address {
+        max-width: 100%;
+        order: 2;
+    }
+
+    #about-location {
+        max-width: 100%;
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    #about-location h2 {
+        font-size: 2rem;
+    }
+
+    #about-location p {
+        display: none;
+    }
+
+    /*Event details*/
+    #details {
+        width: 90%;
+    }
+
+    .detail {
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+        gap: 0;
+    }
+
+    #detail-1 h3 {
+        font-size: 2rem;
+    }
+
+    .detail h3 {
+        font-size: 1.8rem;
+    }
+
+    .detail img {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    #detail-1 img {
+        display: none;
+    }
+
+    .detail-description {
+        padding: 0;
+    }
+
+    #detail-3 img {
+        order: 2;
+    }
+
+    #detail-3 .detail-description {
+        order: 1;
+    }
+
+    /*Call to action*/
+    #call-to-action {
+        text-align: center;
+    }
+
+    #call-to-action .btn {
+        width: 80%;
+    }
+
+    #call-to-action a {
+        font-size: 1rem;
+    }
+
+    .btn {
+        opacity: 1;
+    }
+
+    /*footer*/
+    footer h3 {
+        font-size: 1.4rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+    
+    footer p:nth-child(2) {
+        font-size: 1.2rem;
+    }
 }
